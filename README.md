@@ -9,7 +9,6 @@
 <ul>
     <li>🔗 <strong>Dataset Source:</strong> <a href="https://www.kaggle.com/datasets/whenamancodes/credit-card-customers-prediction">Kaggle</a></li>
     <li>📈 <strong>Churn Rate:</strong> Only <strong>16.07%</strong> of customers have churned, making this an imbalanced classification problem.</li>
-    <li>📡 <strong>Additional Resource:</strong> <a href="https://leaps.analyttica.com/home">Analyttica Leaps</a> - A platform explaining business problem-solving with datasets.</li>
 </ul>
 
 <h2>🗂 Data Dictionary</h2>
@@ -75,5 +74,5 @@
 </ul>
 
 <hr>
-<p>🔍 <strong>Author:</strong> Your Name</p>
+<p>🔍 <strong>Author:</strong> Lance Belen</p>
 <p>📬 <strong>Contact:</strong> <a href="mailto:lancebelen.a@gmail.com">lancebelen.a@gmail.com</a></p>
