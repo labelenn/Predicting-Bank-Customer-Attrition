@@ -1,78 +1,79 @@
-```markdown
-# 🏦 Predicting Bank Customer Attrition
 
-## 📌 Project Overview
+<h1>🏦 Predicting Bank Customer Attrition</h1>
 
-This project focuses on exploring a dataset related to bank customer attrition, specifically customers leaving their credit card services. The primary goal is to analyze key factors contributing to churn and develop a predictive model that can identify customers at risk of leaving. By doing so, bank staff can take proactive measures to retain valuable customers and reduce attrition.
+<h2>📌 Project Overview</h2>
+<p>This project focuses on exploring a dataset related to bank customer attrition, specifically customers leaving their credit card services. The primary goal is to analyze key factors contributing to churn and develop a predictive model that can identify customers at risk of leaving. By doing so, bank staff can take proactive measures to retain valuable customers and reduce attrition.</p>
 
-## 📊 Dataset Information
+<h2>📊 Dataset Information</h2>
+<p>The dataset consists of <strong>10,000</strong> bank customers and includes <strong>18 features</strong> related to their demographics, credit card usage, and account activity.</p>
+<ul>
+    <li>🔗 <strong>Dataset Source:</strong> <a href="https://www.kaggle.com/datasets/whenamancodes/credit-card-customers-prediction">Kaggle</a></li>
+    <li>📈 <strong>Churn Rate:</strong> Only <strong>16.07%</strong> of customers have churned, making this an imbalanced classification problem.</li>
+    <li>📡 <strong>Additional Resource:</strong> <a href="https://leaps.analyttica.com/home">Analyttica Leaps</a> - A platform explaining business problem-solving with datasets.</li>
+</ul>
 
-The dataset consists of **10,000** bank customers and includes **18 features** related to their demographics, credit card usage, and account activity.
+<h2>🗂 Data Dictionary</h2>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Description</th>
+    </tr>
+    <tr><td><strong>CLIENTNUM</strong></td><td>Unique identifier for the customer holding the account</td></tr>
+    <tr><td><strong>Attrition_Flag</strong></td><td>1 = Account closed, 0 = Active account</td></tr>
+    <tr><td><strong>Customer_Age</strong></td><td>Age of the customer in years</td></tr>
+    <tr><td><strong>Gender</strong></td><td>M = Male, F = Female</td></tr>
+    <tr><td><strong>Dependent_count</strong></td><td>Number of dependents</td></tr>
+    <tr><td><strong>Education_Level</strong></td><td>Educational qualification (e.g., High School, College Graduate)</td></tr>
+    <tr><td><strong>Marital_Status</strong></td><td>Married, Single, Divorced, Unknown</td></tr>
+    <tr><td><strong>Income_Category</strong></td><td>Annual income category (&lt; $40K, $40K-$60K, etc.)</td></tr>
+    <tr><td><strong>Card_Category</strong></td><td>Credit card type (Blue, Silver, Gold, Platinum)</td></tr>
+    <tr><td><strong>Months_on_book</strong></td><td>Relationship duration with the bank (in months)</td></tr>
+    <tr><td><strong>Total_Relationship_count</strong></td><td>Total number of products held by the customer</td></tr>
+    <tr><td><strong>Months_Inactive_12_mon</strong></td><td>Months inactive in the last 12 months</td></tr>
+    <tr><td><strong>Contacts_Count_12_mon</strong></td><td>Number of contacts in the last 12 months</td></tr>
+    <tr><td><strong>Credit_Limit</strong></td><td>Credit limit on the card</td></tr>
+    <tr><td><strong>Total_Revolving_Bal</strong></td><td>Total revolving balance on the card</td></tr>
+    <tr><td><strong>Avg_Open_To_Buy</strong></td><td>Available credit line (average of last 12 months)</td></tr>
+    <tr><td><strong>Total_Amt_Chng_Q4_Q1</strong></td><td>Change in transaction amount (Q4 over Q1)</td></tr>
+    <tr><td><strong>Total_Trans_Amt</strong></td><td>Total transaction amount in the last 12 months</td></tr>
+    <tr><td><strong>Total_Trans_Ct</strong></td><td>Total transaction count in the last 12 months</td></tr>
+    <tr><td><strong>Total_Ct_Chng_Q4_Q1</strong></td><td>Change in transaction count (Q4 over Q1)</td></tr>
+    <tr><td><strong>Avg_Utilization_Ratio</strong></td><td>Average card utilization ratio</td></tr>
+</table>
 
-- 🔗 **Dataset Source:** [Kaggle](https://www.kaggle.com/datasets/whenamancodes/credit-card-customers-prediction)
-- 📈 **Churn Rate:** Only **16.07%** of customers have churned, making this an imbalanced classification problem.
-- 📡 **Additional Resource:** [Analyttica Leaps](https://leaps.analyttica.com/home) - A platform explaining business problem-solving with datasets.
+<h2>🏗 Project Goals</h2>
+<ul>
+    <li>✔️ Perform exploratory data analysis (EDA) to understand patterns in customer churn.</li>
+    <li>✔️ Handle data imbalance using techniques such as oversampling/undersampling or weighted loss functions.</li>
+    <li>✔️ Train and evaluate different machine learning models to predict customer attrition.</li>
+    <li>✔️ Deploy the best-performing model for real-world use.</li>
+</ul>
 
-## 🗂 Data Dictionary
+<h2>🛠 Tech Stack</h2>
+<ul>
+    <li><strong>Programming Language:</strong> Python 🐍</li>
+    <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn</li>
+    <li><strong>Machine Learning Models:</strong></li>
+</ul>
 
-| Feature                        | Description                                                     |
-| ------------------------------ | --------------------------------------------------------------- |
-| **CLIENTNUM**                  | Unique identifier for the customer holding the account          |
-| **Attrition\_Flag**            | 1 = Account closed, 0 = Active account                          |
-| **Customer\_Age**              | Age of the customer in years                                    |
-| **Gender**                     | M = Male, F = Female                                            |
-| **Dependent\_count**           | Number of dependents                                            |
-| **Education\_Level**           | Educational qualification (e.g., High School, College Graduate) |
-| **Marital\_Status**            | Married, Single, Divorced, Unknown                              |
-| **Income\_Category**           | Annual income category (< \$40K, \$40K-\$60K, etc.)             |
-| **Card\_Category**             | Credit card type (Blue, Silver, Gold, Platinum)                 |
-| **Months\_on\_book**           | Relationship duration with the bank (in months)                 |
-| **Total\_Relationship\_count** | Total number of products held by the customer                   |
-| **Months\_Inactive\_12\_mon**  | Months inactive in the last 12 months                           |
-| **Contacts\_Count\_12\_mon**   | Number of contacts in the last 12 months                        |
-| **Credit\_Limit**              | Credit limit on the card                                        |
-| **Total\_Revolving\_Bal**      | Total revolving balance on the card                             |
-| **Avg\_Open\_To\_Buy**         | Available credit line (average of last 12 months)               |
-| **Total\_Amt\_Chng\_Q4\_Q1**   | Change in transaction amount (Q4 over Q1)                       |
-| **Total\_Trans\_Amt**          | Total transaction amount in the last 12 months                  |
-| **Total\_Trans\_Ct**           | Total transaction count in the last 12 months                   |
-| **Total\_Ct\_Chng\_Q4\_Q1**    | Change in transaction count (Q4 over Q1)                        |
-| **Avg\_Utilization\_Ratio**    | Average card utilization ratio                                  |
+<h2>🚀 How to Run the Project</h2>
+<ol>
+    <li>Clone this repository:</li>
+    <pre><code>git clone https://github.com/labelenn/predicting-bank-customer-attrition.git</code></pre>
+    <li>Install dependencies:</li>
+    <pre><code>pip install -r requirements.txt</code></pre>
+    <li>Run the data preprocessing and model training script:</li>
+    <pre><code>python train_model.py</code></pre>
+    <li>Evaluate model performance and analyze predictions.</li>
+</ol>
 
-## 🏗 Project Goals
+<h2>📌 Future Improvements</h2>
+<ul>
+    <li>🔹 Feature engineering to improve model accuracy.</li>
+    <li>🔹 Hyperparameter tuning for better generalization.</li>
+    <li>🔹 Deployment as a web application or API.</li>
+</ul>
 
-✔️ Perform exploratory data analysis (EDA) to understand patterns in customer churn. ✔️ Handle data imbalance using techniques such as oversampling/undersampling or weighted loss functions. ✔️ Train and evaluate different machine learning models to predict customer attrition. ✔️ Deploy the best-performing model for real-world use.
-
-## 🛠 Tech Stack
-
-- **Programming Language:** Python 🐍
-- **Libraries:** Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
-- **Machine Learning Models:**
-
-## 🚀 How to Run the Project
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/labelenn/Predicting-Bank-Customer-Attrition.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the data preprocessing and model training script:
-   ```bash
-   python train_model.py
-   ```
-4. Evaluate model performance and analyze predictions.
-
-## 📌 Future Improvements
-
-🔹 Feature engineering to improve model accuracy.\
-🔹 Hyperparameter tuning for better generalization.\
-🔹 Deployment as a web application or API.
-
----
-
-🔍 **Author:** Lance Belen\
-📬 **Contact:** lancebelen.a@gmail.com(mailto\:lancebelen.a@gmail.com)\
-```
+<hr>
+<p>🔍 <strong>Author:</strong> Your Name</p>
+<p>📬 <strong>Contact:</strong> <a href="mailto:lancebelen.a@gmail.com">lancebelen.a@gmail.com</a></p>
