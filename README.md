@@ -51,7 +51,7 @@
 <h2>🛠 Tech Stack</h2>
 <ul>
     <li><strong>Programming Language:</strong> Python 🐍</li>
-    <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn</li>
+    <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn</li>
     <li><strong>Machine Learning Models:</strong></li>
 </ul>
 
