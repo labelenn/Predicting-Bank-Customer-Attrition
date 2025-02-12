@@ -55,17 +55,6 @@
     <li><strong>Machine Learning Models:</strong></li>
 </ul>
 
-<h2>🚀 How to Run the Project</h2>
-<ol>
-    <li>Clone this repository:</li>
-    <pre><code>git clone https://github.com/labelenn/predicting-bank-customer-attrition.git</code></pre>
-    <li>Install dependencies:</li>
-    <pre><code>pip install -r requirements.txt</code></pre>
-    <li>Run the data preprocessing and model training script:</li>
-    <pre><code>python train_model.py</code></pre>
-    <li>Evaluate model performance and analyze predictions.</li>
-</ol>
-
 <h2>📌 Future Improvements</h2>
 <ul>
     <li>🔹 Feature engineering to improve model accuracy.</li>
