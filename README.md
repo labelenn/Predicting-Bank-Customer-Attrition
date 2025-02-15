@@ -12,7 +12,7 @@
 </ul>
 
 <h2>📈 Dashboard</h2>
-<p>View my dashboard here! -> <a href="https://public.tableau.com/app/profile/lance.belen/viz/BankCustomerAttrition_17394423046190/Dashboard1>Tableau</a></p>ß
+<p>View my dashboard here! -> <a href="https://public.tableau.com/app/profile/lance.belen/viz/BankCustomerAttrition_17394423046190/Dashboard1">Tableau</a></p>ß
 
 <h2>🗂 Data Dictionary</h2>
 <table>
