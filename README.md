@@ -11,6 +11,9 @@
     <li>📈 <strong>Churn Rate:</strong> Only <strong>16.07%</strong> of customers have churned, making this an imbalanced classification problem.</li>
 </ul>
 
+<h2>📈 Dashboard</h2>
+<p>View my dashboard here! -> <a href="https://public.tableau.com/app/profile/lance.belen/viz/BankCustomerAttrition_17394423046190/Dashboard1>Tableau</a></p>ß
+
 <h2>🗂 Data Dictionary</h2>
 <table>
     <tr>
